@@ -1,0 +1,11 @@
+{id_material:
+                {material:
+                        {id_table1:
+                                    {T:{a:1,b:2,c:3,d:4}},
+                        id_table2:
+                                    {A:{e:1,f:2,g:2,h:3}},
+                        id_table3:
+                                    {B:{i:1,j:2,k:3,l:4}}
+                        }
+                }
+}

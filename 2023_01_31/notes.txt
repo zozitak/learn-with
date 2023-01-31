@@ -22,4 +22,10 @@ httpbin
 #view network data of a page
 https://mkyong.com/computer-tips/how-to-view-http-headers-in-google-chrome/
 
+#flask http response
 
+#flask json respone
+
+#flask minimal api
+
+#pandas

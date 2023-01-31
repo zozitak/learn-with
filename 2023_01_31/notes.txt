@@ -1,0 +1,14 @@
+pip install virtualenv
+#cd my_project
+virtualenv env1
+.\env1\Scripts\activate.bat
+pip install pandas
+pip install flask
+pip freeze > requirements.txt
+deactivate
+dir
+rd /s /q env1
+dir
+virtualenv env2
+.\env2\Scripts\activate.bat
+pip install -r requirements.txt

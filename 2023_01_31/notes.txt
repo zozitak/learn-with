@@ -3,6 +3,7 @@ pip install virtualenv
 virtualenv env1
 .\env1\Scripts\activate.bat
 pip install pandas
+pip install requests
 pip install flask
 pip freeze > requirements.txt
 deactivate
@@ -12,3 +13,13 @@ dir
 virtualenv env2
 .\env2\Scripts\activate.bat
 pip install -r requirements.txt
+
+#api requests
+https://www.nylas.com/blog/use-python-requests-module-rest-apis/
+ISS location 
+httpbin
+
+#view network data of a page
+https://mkyong.com/computer-tips/how-to-view-http-headers-in-google-chrome/
+
+

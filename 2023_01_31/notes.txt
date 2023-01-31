@@ -14,6 +14,8 @@ virtualenv env2
 .\env2\Scripts\activate.bat
 pip install -r requirements.txt
 
+#virtualenv in vscode
+
 #api requests
 https://www.nylas.com/blog/use-python-requests-module-rest-apis/
 ISS location 
@@ -28,4 +30,5 @@ https://mkyong.com/computer-tips/how-to-view-http-headers-in-google-chrome/
 
 #flask minimal api
 
-#pandas
+#pandas 
+#https://stackoverflow.com/questions/67617183/converting-excel-to-json-using-pandas-in-python-3-9

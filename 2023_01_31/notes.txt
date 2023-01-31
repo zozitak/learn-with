@@ -15,6 +15,7 @@ virtualenv env2
 pip install -r requirements.txt
 
 #virtualenv in vscode
+#https://code.visualstudio.com/docs/python/environments
 
 #api requests
 https://www.nylas.com/blog/use-python-requests-module-rest-apis/

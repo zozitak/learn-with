@@ -4,7 +4,7 @@
 # https://pythonbasics.org/flask-rest-api/
 
 import json
-from flask import Flask
+from flask import *
 app = Flask(__name__)
 @app.route('/')
 def index():

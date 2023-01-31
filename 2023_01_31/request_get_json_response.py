@@ -8,6 +8,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 @app.route('/')
 def index():
+    print("hello world")
     return jsonify({'name': 'alice',
                     'email': 'alice@outlook.com'})
 

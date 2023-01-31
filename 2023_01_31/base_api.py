@@ -7,18 +7,23 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+#Chrome -> GET {"name":"Lajos"}
 @app.route('/', methods=['GET'])
 def query_records():
+    print('------------------------------------------------------------------------')
     name = request.args.get('name')
     print(name)
-    with open('/tmp/data.txt', 'r') as f:
+    with open('E:\\programing\\learn\\2023_01_31\\tmp\\data.txt', 'r') as f:
         data = f.read()
         records = json.loads(data)
+        print(records)
         for record in records:
+            print(record)
             if record['name'] == name:
                 return jsonify(record)
         return jsonify({'error': 'data not found'})
 
+#Chrome -> PUT {"name":"Lajos","email":"lajos@gmail.com"}
 @app.route('/', methods=['PUT'])
 def create_record():
     record = json.loads(request.data)
@@ -33,6 +38,7 @@ def create_record():
         f.write(json.dumps(records, indent=2))
     return jsonify(record)
 
+#Chrome -> POST {"name":"Lajos","email":"lajos@gmail.com"}
 @app.route('/', methods=['POST'])
 def update_record():
     record = json.loads(request.data)
@@ -47,7 +53,8 @@ def update_record():
     with open('/tmp/data.txt', 'w') as f:
         f.write(json.dumps(new_records, indent=2))
     return jsonify(record)
-    
+
+#Chrome -> DELETE {"name":"Lajos"}
 @app.route('/', methods=['DELETE'])
 def delte_record():
     record = json.loads(request.data)

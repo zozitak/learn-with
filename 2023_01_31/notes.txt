@@ -17,13 +17,13 @@ pip install -r requirements.txt
 #virtualenv in vscode
 #https://code.visualstudio.com/docs/python/environments
 
+#view network data of a page
+https://mkyong.com/computer-tips/how-to-view-http-headers-in-google-chrome/
+
 #api requests
 https://www.nylas.com/blog/use-python-requests-module-rest-apis/
 ISS location 
 httpbin
-
-#view network data of a page
-https://mkyong.com/computer-tips/how-to-view-http-headers-in-google-chrome/
 
 #flask http response
 

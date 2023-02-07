@@ -13,13 +13,13 @@ app = Flask(__name__)
 def query_records():
     print('------------------------------------------------------------------------')
     name = request.args.get('name')
-    print(name)
+    #print(name)
     with open(os.getcwd() + '\\2023_01_31\\tmp\\data.txt', 'r') as f:
         data = f.read()
         records = json.loads(data)
-        print(records)
+        #print(records)
         for record in records:
-            print(record)
+            #print(record)
             if record['name'] == name:
                 return jsonify(record)
         return jsonify({'error': 'data not found'})
